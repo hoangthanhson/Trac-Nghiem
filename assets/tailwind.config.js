@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        35:'35px',
+        35:'1000px',
       },
       colors: {
         gray33: '#333',
