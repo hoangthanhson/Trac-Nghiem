@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/style/app.css">
-    <script src="./assets/javascript/main.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="./assets/javascript/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="./assets/build/tailwind.css">
 </head>
 <body>
-    <div class="container font-sans font-semibold max-w-full">
+    <div class="container relative font-sans font-semibold max-w-full">
         <header class="header-info flex h-14 py-3 px-6 bg-blue-400">
             <div class="header-contact text-white">
                 <i class="">
@@ -21,12 +21,7 @@
                     <ion-icon class="mail w-5 h-5" name="mail"></ion-icon> Email : sonhoang.070400@gmail.com
                 </i>
             </div>
-            <div class="header-login absolute right-10">
-                <div class="text-white">
-                    Bạn chưa đăng nhập 
-                    <a class="hover:text-gray-600" href="./login.html">Đăng nhập</a>
-                </div>
-            </div>
+            
         </header>
         <nav class="nav-pc relative flex row py-3 px-3 border-2">
             <div class="nav-logo">
@@ -67,13 +62,14 @@
                 $("#hide").click(function(){
                     $('.nav-list-mobile').toggle(400);
                 });
+                
             </script>
             <ul class="z-50 nav-list-mobile bg-blue-300 text-xl text-gray-800 float-right text-right px-5">
                 <li class="nav-link-mobile px-5 py-2 hover:text-gray-500">
                     <a href="#">Trang chủ</a>
                 </li>
                 <li class="nav-link-mobile px-5 py-2 hover:text-gray-500">
-                    <a href="#">Môn học</a>
+                    <a href="#">Khóa học</a>
                 </li>
                 <li class="nav-link-mobile px-5 py-2 hover:text-gray-500">
                     <a href="#">Trang cá nhân</a>
@@ -85,66 +81,111 @@
                     <a href="#">Vietnamese</a>
                 </li>
             </ul> 
-        </div>  
-        <main class="lg:flex md:gap-x-3 mx-auto">
-            <div class="p-5 md:w-3/5 block mx-auto">
-                <div class="px-5 py-8 mb-8 rounded-lg border border-[#eee] text-center bg-white dark:bg-[#0F0D58]">
-                  <h3 class="text-lg font-semibold mb-6 text-[#0F0D58] dark:text-white">Quy định</h3>
-                  <div class="text-sm leading-loose text-[#9191B4] font-normal dark:text-white">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, odio,
-                    facilis vero quod natus molestiae autem provident nam corporis sint
-                    accusamus excepturi at in, temporibus architecto ad voluptatibus
-                    maxime. Tenetur!
-                  </div>
+        </div> 
+        <div class="absolute right-10 top-3 header-login">
+            <button onclick="myFunction()" class="dropbtn flex">
+                <p class="mt-1 pr-2 font-bold">Hoàng Thanh Sơn</p>
+                <div class=" block h-8 w-8 rounded-full overflow-hidden border-2 border-gray-600 forcus:outline-none forcus:border-white"> 
+                    <img  class="w-full h-full object-cover" src="./assets/images/avatar.png" alt="">
                 </div>
-                <div class="px-5 py-8 mb-8 rounded-lg border border-[#eee] text-center bg-white dark:bg-[#0F0D58]">
-                    <h3 class="text-lg font-semibold mb-6 text-[#0F0D58] dark:text-white">Bảng tin </h3>
-                    <div class="text-sm leading-loose text-[#9191B4] font-normal dark:text-white">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, odio,
-                      facilis vero quod natus molestiae autem provident nam corporis sint
-                      accusamus excepturi at in, temporibus architecto ad voluptatibus
-                      maxime. Tenetur!
+            </button>
+            <div id="myDropdown" class="absolute dropdown-content hidden mt-2 w-48 z-100 bg-white rounded-lg shadow-xl py-2">
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:text-white">
+                    <div class=" block h-40 w-40 rounded-full overflow-hidden border-2 border-gray-600 forcus:outline-none forcus:border-white"> 
+                        <img  class="w-full h-full object-cover" src="./assets/images/avatar.png" alt="">
                     </div>
-                  </div>
-                  <div class="px-5 py-8 mb-8 rounded-lg border border-[#eee] text-center bg-white dark:bg-[#0F0D58]">
-                    <h3 class="text-lg font-semibold mb-6 text-[#0F0D58] dark:text-white">Bảng tin </h3>
-                    <div class="text-sm leading-loose text-[#9191B4] font-normal dark:text-white">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, odio,
-                      facilis vero quod natus molestiae autem provident nam corporis sint
-                      accusamus excepturi at in, temporibus architecto ad voluptatibus
-                      maxime. Tenetur!
+                    <br><hr>
+                </a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Cài đặt</a><hr>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Đăng xuất</a><hr>
+            </div>
+        </div> 
+        <main>
+            <form action="" method="">
+                <section class="mx-4 px-4 py-4 my-4 border-2 border-[#eee]">
+                    <div class="pl-10 pt-3">
+                        <p class="font-bold">Thông tin chung</p>
+                        <hr>
                     </div>
-                  </div>
-              </div>
-              <div class="p-5 md:w-2/5 block mx-auto">
-                <div class="px-5 py-8 mb-8 rounded-lg border border-[#eee] text-center bg-white dark:bg-[#0F0D58]">
-                  <h3 class="text-lg font-semibold mb-6 text-[#0F0D58] dark:text-white">Thông báo</h3>
-                  <div class="text-sm leading-loose text-[#9191B4] font-normal dark:text-white">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, odio,
-                    facilis vero quod natus molestiae autem provident nam corporis sint
-                    accusamus excepturi at in, temporibus architecto ad voluptatibus
-                    maxime. Tenetur!
-                  </div>
-                </div>
-                <div class="px-5 py-8 mb-8 rounded-lg border border-[#eee] text-center bg-white dark:bg-[#0F0D58]">
-                    <h3 class="text-lg font-semibold mb-6 text-[#0F0D58] dark:text-white">Thông báo</h3>
-                    <div class="text-sm leading-loose text-[#9191B4] font-normal dark:text-white">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, odio,
-                      facilis vero quod natus molestiae autem provident nam corporis sint
-                      accusamus excepturi at in, temporibus architecto ad voluptatibus
-                      maxime. Tenetur!
+                    <table align="center">
+                        <tr class="block py-1 pt-3">
+                            <td class="pr-16">
+                                <label for="name">Tên người dùng</label>
+                            </td>
+                            <td>
+                                <input class="border px-2 py-2" type="text" name="name" id="name" value="Hoàng Thanh Sơn" size="30">
+                            </td>
+                        </tr>
+                        <tr class="block py-1">
+                            <td class="pr-28">Giới tính </td>
+                            <td class="px-2 py-2">
+                                <input type="radio" checked id="nam" name="sex" value="Nam">
+                                <label for="nam">Nam</label>
+                                <input type="radio" id="css" name="sex" value="Nữ">
+                                <label for="nu">Nữ</label>
+                            </td>
+                        </tr>
+                        <tr class="block py-1">
+                            <td class="pr-24">
+                                <label for="birthday">Ngày sinh &nbsp;</label>
+                            </td>
+                            <td>
+                                <input class="border px-2 py-2" type="date" id="birthday" name="birthday"  value="2021-12-15">
+                            </td>
+                        </tr>
+                        <tr class="block py-1">
+                            <td class="pr-32">
+                                <label for="address">Địa chỉ</label>
+                            </td>
+                            <td>
+                                <input class="border px-2 py-2" type="text" name="address" id="address" value="Cam Lâm, Khánh Hòa" size="30">
+                            </td>
+                        </tr>
+                        <tr class="block py-1">
+                            <td class="pr-10">
+                                <label for="email">Địa chỉ thư điện tử</label>
+                            </td>
+                            <td>
+                                <input class="border px-2 py-2" type="email" name="email" id="email" value="sonhoang.070400@gmail.com" size="30">
+                            </td>
+                        </tr>
+                        <tr class="block py-1">
+                            <td class="pr-20">
+                                <label for="phone">Số điện thoại</label>
+                            </td>
+                            <td>
+                                <input class="border px-2 py-2" type="text" name="phone" id="phone" value="0358405987" size="30">
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="py-2 pl-10">
+                        <p class="font-bold">Ảnh người dùng</p>
+                        <hr>
                     </div>
-                  </div>
-                  <div class="px-5 py-8 mb-8 rounded-lg border border-[#eee] text-center bg-white dark:bg-[#0F0D58]">
-                    <h3 class="text-lg font-semibold mb-6 text-[#0F0D58] dark:text-white">Thông báo</h3>
-                    <div class="text-sm leading-loose text-[#9191B4] font-normal dark:text-white">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, odio,
-                      facilis vero quod natus molestiae autem provident nam corporis sint
-                      accusamus excepturi at in, temporibus architecto ad voluptatibus
-                      maxime. Tenetur!
-                    </div>
-                  </div>
-              </div>
+                    <table align="center">
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div class=" block h-40 w-40 rounded-full overflow-hidden border-2 border-gray-600 forcus:outline-none forcus:border-white"> 
+                                    <img  class="w-full h-full object-cover" src="./assets/images/avatar.png" alt="">
+                                </div>
+                                <div>
+                                    <input type="file" id="files" class="hidden"/><br>
+                                    <label class="border rounded-lg px-5 py-2 ml-3 text-white bg-yellow-500 hover:bg-yellow-400" for="files">Cập nhật ảnh</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <br>
+                                <input class="px-5 py-2 border rounded-lg font-bold text-white bg-yellow-500 hover:bg-yellow-400" type="submit" value="Cập nhật">
+                                <input class="px-5 py-2 border rounded-lg font-bold text-white bg-red-500 hover:bg-red-400" type="reset" value="Xóa">
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </form>
         </main>
         <footer>
             <div class="p-10 bg-gray-800 text-gray-200">
@@ -212,5 +253,8 @@
             </div>
         </footer>
     </div>
+    
 </body>
+<script>
+</script>
 </html>
