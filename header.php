@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/style/app.css">
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script src="./assets/javascript/main.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="./assets/build/tailwind.css">
-</head>
-<body>
-    <div class="container relative font-sans font-semibold max-w-full">
-        <header class="header-info flex h-14 py-3 px-6 bg-blue-400">
+<header class="header-info flex h-14 py-3 px-6 bg-blue-400">
             <div class="header-contact text-white">
                 <i class="">
                     <ion-icon class="call w-5 h-5" name="call"/></ion-icon> Liên hệ : 0358405987  &nbsp;
@@ -25,7 +9,7 @@
         </header>
         <nav class="nav-pc relative flex row py-3 px-3 border-2">
             <div class="nav-logo">
-                <a href="#">
+                <a href="./home.php">
                     <img src="./assets/images/page-free.png" alt="" width="50px" height="50px">
                 </a>
             </div>
@@ -37,13 +21,13 @@
             </div>
             <ul class="nav-list-pc text-xl text-gray-800 flex md:absolute md:right-0 md:top-6 px-5 ">
                 <li class="nav-link-pc px-5 hover:text-gray-500">
-                    <a href="# ">Trang chủ</a>
+                    <a href="./home.php">Trang chủ</a>
                 </li>
                 <li class="nav-link-pc px-5 hover:text-gray-500">
-                    <a href="#">Môn học</a>
+                    <a href="./subject.php">Môn học</a>
                 </li>
                 <li class="nav-link-pc px-5 hover:text-gray-500">
-                    <a href="#">Trang cá nhân</a>
+                    <a href="./personal.php">Trang cá nhân</a>
                 </li>
                 <li class="nav-link-pc px-5 hover:text-gray-500">
                     <a href="#">Hướng dẫn</a>
@@ -66,13 +50,13 @@
             </script>
             <ul class="z-50 nav-list-mobile bg-blue-300 text-xl text-gray-800 float-right text-right px-5">
                 <li class="nav-link-mobile px-5 py-2 hover:text-gray-500">
-                    <a href="#">Trang chủ</a>
+                    <a href="./home.php">Trang chủ</a>
                 </li>
                 <li class="nav-link-mobile px-5 py-2 hover:text-gray-500">
-                    <a href="#">Khóa học</a>
+                    <a href="./subject.php">Môn học</a>
                 </li>
                 <li class="nav-link-mobile px-5 py-2 hover:text-gray-500">
-                    <a href="#">Trang cá nhân</a>
+                    <a href="./personal.php">Trang cá nhân</a>
                 </li>
                 <li class="nav-link-mobile px-5 py-2 hover:text-gray-500">
                     <a href="#">Hướng dẫn</a>
@@ -90,18 +74,13 @@
                 </div>
             </button>
             <div id="myDropdown" class="absolute dropdown-content hidden mt-2 w-48 z-100 bg-white rounded-lg shadow-xl py-2">
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:text-white">
+                <a href="./personal.php" class="block px-4 py-2 text-gray-800 hover:text-white">
                     <div class=" block h-40 w-40 rounded-full overflow-hidden border-2 border-gray-600 forcus:outline-none forcus:border-white"> 
                         <img  class="w-full h-full object-cover" src="./assets/images/avatar.png" alt="">
                     </div>
                     <br><hr>
                 </a>
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Cài đặt</a><hr>
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Đăng xuất</a><hr>
+                <a href="./personal.php" class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Cài đặt</a><hr>
+                <a href="./login.php" class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Đăng xuất</a><hr>
             </div>
         </div> 
-    </div>
-</body>
-<script>
-</script>
-</html>
