@@ -24,7 +24,7 @@
             <div class="header-login absolute right-10">
                 <div class="text-white">
                     Bạn chưa đăng nhập 
-                    <a class="hover:text-gray-600" href="./login.html">Đăng nhập</a>
+                    <a class="hover:text-gray-600" href="./login.php">Đăng nhập</a>
                 </div>
             </div>
         </header>
@@ -146,7 +146,7 @@
                   </div>
               </div>
         </main>
-        <?php include './include/footer.php' ?>
+        <?php include './footer.php' ?>
     </div>
 </body>
 </html>
